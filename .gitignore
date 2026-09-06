@@ -1,18 +1,19 @@
-# 构建产物
-dist/
-build/
-*.spec
-__pycache__/
-*.pyc
-
-# 运行时框架（体积大且版本易变，请按 README 自行准备）
-src/payload/
-
-# 补丁程序 exe
-*.exe
-
-# 游戏文本提取结果（含完整游戏脚本，自行提取）
-hank_text/
 
 # 本地备份
+# 构建产物
+# 游戏文本提取结果（含完整游戏脚本，自行提取）
+# 补丁程序 exe
+# 运行时框架（体积大且版本易变，请按 README 自行准备）
 *.bak
+*.exe
+*.pyc
+*.spec
+*.zip
+Hank-CN-ManualPatch.zip
+__pycache__/
+build/
+device_poll.txt
+device_session.json
+dist/
+hank_text/
+src/payload/
