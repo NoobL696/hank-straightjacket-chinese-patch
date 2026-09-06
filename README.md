@@ -13,6 +13,8 @@
 - 遇到问题欢迎提 Issue，但作者（也是人类监督者）不承诺修复时效。
 
 > **免责声明**：本项目为同人汉化，仅供个人学习交流使用。游戏文本版权归开发商 My Next Games 所有，请支持正版（Steam 免费游玩）。请勿将本项目内容用于商业用途。
+>
+> **版权说明**：为控制版权暴露面，本仓库**不分发任何游戏文本原文或游戏资源**——`data/translations.json` 仅包含补丁互操作所必需的翻译映射；补丁所需的英文原文始终来自玩家本地游戏文件（安装时自动生成的 `resources.assets.bak` 备份）；如需游戏原文文本，请用 `tools/extract_text.py` 对**你自己的**游戏副本提取，提取结果请勿分发。
 
 ## 汉化原理
 
@@ -32,7 +34,6 @@ cd src
 pyinstaller --onefile --noconsole --name "Hank汉化补丁" \
     --collect-data UnityPy \
     --add-data "../data/translations.json;." \
-    --add-data "../data/en_text;en_text" \
     --add-data "payload;payload" \
     patcher_hank_cn.py
 ```
@@ -54,8 +55,8 @@ pyinstaller --onefile --noconsole --name "Hank汉化补丁" \
 
 ```bash
 pip install UnityPy
-python tools/extract_text.py          # 提取游戏文本（hank_text/）
-python tools/replace_assets.py        # 备份并替换为中文（需设置 HANK_GAME_DIR 或自动定位）
+python tools/extract_text.py          # 从你自己的游戏副本提取文本（hank_text/，请勿分发）
+python tools/replace_assets.py        # 备份并替换为中文（自动定位游戏目录）
 python tools/make_patch.py            # 生成人工校对用的翻译对照表 CSV
 ```
 
@@ -69,12 +70,13 @@ python tools/make_patch.py            # 生成人工校对用的翻译对照表 
 
 ```
 ├── src/patcher_hank_cn.py   # 一键补丁程序（GUI + 控制台模式）
-├── data/translations.json   # 196 条人工翻译（英文原文 -> 中文）
-├── data/en_text/            # 游戏原始英文文本（en.txt / seq_en.txt）
-├── tools/extract_text.py    # 从 resources.assets 提取游戏文本
+├── data/translations.json   # 196 条 AI 翻译映射（英文原文 -> 中文）
+├── tools/extract_text.py    # 从你自己的游戏副本提取文本（提取结果勿分发）
 ├── tools/replace_assets.py  # 直接替换文本资产（无框架场景）
 └── tools/make_patch.py      # 生成翻译对照表 CSV
 ```
+
+> 本仓库不分发 `hank_text/`（游戏文本提取结果）。`data/translations.json` 中的英文键来自游戏原文，仅为补丁互操作所必需。
 
 ## 环境
 
