@@ -1,0 +1,18 @@
+# 构建产物
+dist/
+build/
+*.spec
+__pycache__/
+*.pyc
+
+# 运行时框架（体积大且版本易变，请按 README 自行准备）
+src/payload/
+
+# 补丁程序 exe
+*.exe
+
+# 游戏文本提取结果（含完整游戏脚本，自行提取）
+hank_text/
+
+# 本地备份
+*.bak

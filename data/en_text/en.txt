@@ -1,0 +1,45 @@
+MAIN_MENU_BUT_START = Play
+MAIN_MENU_BUT_MORE = More
+MAIN_MENU_BUT_QUIT = Quit
+
+IN_GAME_MENU_RESUME = Resume
+IN_GAME_MENU_HANK_DODL = Hank: Drowning On Dry Land
+IN_GAME_MENU_BACK_TO_TITLE = Back To Title
+IN_GAME_MENU_QUIT = Quit
+
+MAIN_MENU_PRESS_START = Press Any Button
+MAIN_MENU_THX_FOR_PLAYING = Thank you for playing
+
+ACTION_LOOK = Examine
+ACTION_PICK_UP = Pick Up
+ACTION_TALK = Ask About
+ACTION_SAY = Say
+ACTION_USE = Use
+
+DEAD_INFO = Dead
+REWIND_INFO = Hold <XXX> To Rewind
+
+ITEM_NAME_BOOK = Book
+
+BUTTON_LOOK_AT_01 = A big red button. I'm assuming that when he pushes it, I get dropped into the pit of snakes below me.
+
+SNAKES_LOOK_AT_01 = A big pit of, almost certainty, venomous snakes.
+SNAKES_LOOK_AT_02 = I'll die pretty horribly if I fall in there.
+
+GUN_LOOK_AT_01 = He's got a revolver on him. He's not the kind of person whose afraid to use it, either.
+
+UNRAVELER_LOOK_AT_01 = Unraveler. A supervillain. He used to pretend to be mere a stage magician.
+UNRAVELER_LOOK_AT_02 = I stopped him from killing a few politicians and outed him as a murderous scumbag. Now we're "rivals", or "nemeses".
+UNRAVELER_LOOK_AT_03 = Honestly, he just has daddy issues.
+
+CAT_LOOK_AT_01 = Cute cat. Whatever I do, I should avoid hurting it if I can.
+
+WINDOW_LOOK_AT_01 = The window is too far away, not to mention sturdy. I don't think it'll help me right now.
+
+FIREPLACE_LOOK_AT_01 = Cozy fire. I wonder how much it cost to get installed.
+
+BOOK_LOOK_AT_01 = A heavy book. Heavy enough to set off that big red button with the right toss.
+
+CHAIR_LOOK_AT_01 = That's a very fancy chair for a man who dresses like a sideshow act. I don't think he knows how unintentionally funny he is.
+
+FALLEN_SHELF_LOOK_AT_01 = Now if I drop into the pit, I'll have a moment before the snakes kill me.
